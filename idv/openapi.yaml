@@ -13,10 +13,8 @@ info:
     url: http://www.apache.org/licenses/LICENSE-2.0.html
   version: v1
 servers:
-  - url: 'https://{server-url}/t/{tenant-domain}/idv/onfido'
+  - url: 'https://{server-url}/idv/onfido'
     variables:
-      tenant-domain:
-        default: "carbon.super"
       server-url:
         default: "localhost:9443"
 security:
