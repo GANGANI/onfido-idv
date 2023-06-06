@@ -3,7 +3,7 @@ import ballerina/io;
 
 listener http:Listener ep0 = new (9443);
 
-service /t/'carbon\.super/idv/onfido on ep0 {
+service / on ep0 {
     # Initiate Onfido Identity Verification
     #
     # + payload - Verify an identity 
