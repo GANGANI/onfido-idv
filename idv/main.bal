@@ -1,7 +1,7 @@
 import ballerina/http;
 import ballerina/io;
 
-listener http:Listener ep0 = new (9443, config = {host: "localhost"});
+listener http:Listener ep0 = new (9443);
 
 service /t/'carbon\.super/idv/onfido on ep0 {
     # Initiate Onfido Identity Verification
