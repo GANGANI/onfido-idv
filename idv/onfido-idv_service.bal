@@ -61,10 +61,10 @@ service /t/'carbon\.super/idv/onfido on ep0 {
                         );
                         io:println(idvApplicant);
                     }
-                }
+                };
                 ClaimMetadata claimMetadata = {
                     applicantId: "123-456-8239"
-                }
+                };
                 VerificationClaimResponse verificationClaimResponse = {
                     id: "aHR0cDovL3dzbzIub3JnL2NsYWltcy91c2VybmFtZQ",
                     uri: "http://wso2.org/claims/dob",
