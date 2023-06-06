@@ -14,7 +14,7 @@ service / on ep0 {
     # http:Unauthorized (Unauthorized)
     # http:Forbidden (Forbidden)
     # InternalServerErrorError (Server Error)
-    resource function post verify(@http:Payload VerifyRequest payload) returns VerificationPostResponse[]|OkVerificationPostResponse|BadRequestError|http:Unauthorized|http:Forbidden|InternalServerErrorError|error {
+    resource function post t/'carbon\.super/idv/onfido/verify(@http:Payload VerifyRequest payload) returns VerificationPostResponse[]|OkVerificationPostResponse|BadRequestError|http:Unauthorized|http:Forbidden|InternalServerErrorError|error {
     
         ClaimMetadata claimMetadata = {
                 };
